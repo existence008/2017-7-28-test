@@ -1,0 +1,21 @@
+1.大div包裹小div，让小div水平居中显示（小div宽度自动）？
+
+解决方法：设置小div{ display:table; margin:0 auto; }-----谷歌，火狐，IE8以上浏览器支持
+
+2.css3选择器 :nth-child()  :nth-of-type() 兼容问题
+
+<ul class="scene-ul">
+	<li><p>CW330</p></li>
+	<li><p>CW330</p></li>
+	<li><p>CW330</p></li>
+	<li><p>CW330</p></li>
+</ul>
+<style>
+.scene-ul li:nth-of-type(1){ background: url(../img/color-bg1.png) repeat-x;}
+.scene-ul li:nth-of-type(2){ background: url(../img/color-bg2.png) repeat-x;}
+.scene-ul li:nth-of-type(3){ background: url(../img/color-bg3.png) repeat-x;}--兼容IE9以上版本
+
+.scene-ul li:first-child{background: url(../img/color-bg1.png) repeat-x;}//选取第一个li
+.scene-ul li:first-child+li{background: url(../img/color-bg2.png) repeat-x;}//选取第二个li
+.scene-ul li:first-child+li+li{background: url(../img/color-bg3.png) repeat-x;}//选取第三个li   -----兼容IE8
+</style>
