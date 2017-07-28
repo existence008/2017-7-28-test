@@ -19,3 +19,5 @@
 .scene-ul li:first-child+li{background: url(../img/color-bg2.png) repeat-x;}//选取第二个li
 .scene-ul li:first-child+li+li{background: url(../img/color-bg3.png) repeat-x;}//选取第三个li   -----兼容IE8
 </style>
+
+aaaaa
